@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accident Visualization in Dubai</title>
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet" />
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="style.css">
+  
+    
+
+</head>
+<body>
+    <header>
+        <h1>Dubai Accident Visualization</h1>
+    </header>
+    <div id="mapTitle">
+        <h2>Heatmap: Accident Density in Dubai</h2>
+    </div>
+   
+
+    <div id="map-container" style="width: 90%; height: 600px;"></div>
+
+    <div id="controls">
+        <label for="weather-filter">Filter by Weather:</label>
+        <select id="weather-filter">
+            <option value="All">All</option>
+            <option value="Clear">Clear</option>
+            <option value="Rain">Rain</option>
+            <option value="Cloudy">Cloudy</option>
+            
+        
+        <label for="time-slider">Filter by Time:</label>
+        <input type="range" id="time-slider" min="0" max="23" step="1">
+        <span id="time-label">Time: 0</span>
+  
+    </div>
+    <div id="accident-type-chart"></div>
+
+    <div id="networkGraphTitle">
+        <h2>Network Graph of Weather Conditions and Accident Types</h2>
+    </div>
+
+    <div id="networkGraphContainer"></div>
+
+<div id="network-legend">
+    <div>
+        <span class="legend-color" style="background-color: #69b3a2;"></span>
+        <span>Weather Conditions</span>
+    </div>
+    <div>
+        <span class="legend-color" style="background-color: #ff6347;"></span>
+        <span>Accident Types</span>
+    </div>
+</div>
+
+    
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="subgraph.js"></script>
+    <script src="subgraphTwo.js"></script>
+</body>
+</html>
