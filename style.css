@@ -177,3 +177,40 @@ text {
     display: block;
     margin-top: 10px;
 }
+#visualization-explanation {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9; /
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    font-family: Arial, sans-serif; 
+    font-size: 14px; 
+    line-height: 1.6; 
+    color: #333; 
+}
+
+#visualization-explanation h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #444; 
+}
+
+#visualization-explanation p {
+    margin-bottom: 15px; 
+}
+
+#visualization-explanation ul {
+    margin: 10px 0;
+    padding-left: 20px; 
+}
+
+#visualization-explanation ul li {
+    margin-bottom: 8px; 
+}
+#page-end-spacer {
+    height: 70px; 
+    background-color: transparent; 
+}
