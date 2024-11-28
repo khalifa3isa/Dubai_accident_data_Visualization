@@ -71,6 +71,35 @@
 <div><h2>3.The network graph explores relationships between factors.</h2></div>
 <dir><h3>This combination enables data-driven decision-making to improve road safety and resource allocation.</h3></dir>
     
+<div id="visualization-explanation">
+    <h2>Understanding the Visualizations</h2>
+    <p>
+        <strong>1. Preprocessing and Filtering:</strong> 
+        We did a lot of prep work to make the data usable. First, we combined the accident data with weather data by matching locations and timestamps, so each accident had its weather conditions. Some of the labels were in Arabic, so we translated them into English for consistency. Then, we converted the accident data into GeoJSON to make it work with the map.
+
+    </p>
+    <p>
+        <strong>2. Why are these visualizations effective?</strong>
+        These visualizations simplify complex data. The heatmap shows where accidents are concentrated, the pie chart shows which accident types dominate, and the network graph explains relationships between weather and accidents. Together, they help answer the where, what, and why of accidents.
+    </p>
+    <p>
+        <strong>3. Patterns and Anomalies:</strong>
+        - The heatmap reveals accident hotspots, especially in Downtown Dubai, with new areas lighting up during rain.<br>
+        - The pie chart highlights that minor accidents are most common, but severe accidents increase under bad weather.<br>
+        - The network graph links fog to severe accidents and shows how "Violating Vehicles" correlate with overcast weather.
+    </p>
+    <p>
+        <strong>4. Encoding and Interactions:</strong>
+        <ul>
+            <li><strong>Heatmap:</strong> Uses color intensity and position (latitude, longitude) to encode density. Filters for weather and time allow focused exploration.</li>
+            <li><strong>Pie Chart:</strong> Uses slice angles for proportions and color for accident types. Filters dynamically update the chart, with tooltips for details.</li>
+            <li><strong>Network Graph:</strong> Uses nodes (circles) for weather and accident types, and edges (lines) to show relationships. Dragging nodes and filtering add interactivity.</li>
+        </ul>
+    </p>
+</div>
+<div id="page-end-spacer"></div>
+
+
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
 
     <script src="https://d3js.org/d3.v7.min.js"></script>
